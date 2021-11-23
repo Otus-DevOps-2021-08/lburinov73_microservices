@@ -1,0 +1,23 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: Add Docker GPG APT Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker APT Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu xenial stable
+        state: present
+
+    - name: Install Docker and python3 module
+      apt: 
+        name:
+          - docker-ce
+          - python3-docker
+        update_cache: yes 
+        state: latest
+        autoclean: yes

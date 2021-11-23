@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: run container
+      docker_container:
+        name: reddit
+        image: lburinov73/otus-reddit:1.0
+        state: started
+        container_default_behavior: no_defaults
+        network_mode: host
