@@ -1,0 +1,14 @@
+services:
+  ui:
+    volumes:
+      - /home/yc-user/src/ui:/app
+    command: "puma -w2 --debug"
+
+  post:
+    volumes:
+      - /home/yc-user/src/post-py:/app
+
+  comment:
+    volumes:
+      - /home/yc-user/src/comment:/app
+    command: "puma -w2 --debug"
