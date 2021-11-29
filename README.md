@@ -26,3 +26,12 @@ lburinov73/ui        2.0            f672edb7feb8   16 minutes ago   147MB
 lburinov73/comment   2.0            804f2ff9c9b0   17 minutes ago   145MB
 lburinov73/post      2.0            ed8448c88d69   17 minutes ago   115MB
 ```
+
+## домашнее задание N15 (docker-4)
+Было сделано:
+docker-compose изменен под кейс с множеством сетей;
+С помощью переменных окружения параметризированы: порт сервиса UI и версии сервисов;
+Изменить имя проекта в docker-compose можно с помощью переменной окружения `COMPOSE_PROJECT_NAME`,
+либо указав при запуске опцию `-p / --project-name`.
+Задание со *:
+Создан docker-compose.override.yml для монтирования директорий с кодом внутрь запущенных контейнеров (директории должны быть доступны с docker-host).
