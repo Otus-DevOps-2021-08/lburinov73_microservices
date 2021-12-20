@@ -1,0 +1,15 @@
+- hosts: all
+  become: true
+
+  vars:
+    docker_edition: 'ce'
+    docker_package: "docker-{{ docker_edition }}=5:19.03.*"
+    kubernetes_version: '1.19'
+    kubernetes_allow_pods_on_master: false
+    kubernetes_pod_network:
+      cni: 'calico'
+      cidr: '10.244.0.0/16'
+
+  roles:
+    - geerlingguy.docker
+    - geerlingguy.kubernetes
