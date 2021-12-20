@@ -6,12 +6,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: post
+      app: mongo
   template:
     metadata:
-      name: post
+      name: mongo
       labels:
-        app: post
+        app: mongo
     spec:
       containers:
       - image: mongo:3.2
