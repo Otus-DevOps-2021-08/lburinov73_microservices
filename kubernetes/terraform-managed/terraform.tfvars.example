@@ -1,0 +1,7 @@
+cloud_id                 = "<censored>"
+folder_id                = "<censored>"
+network_id               = "<censored>"
+zone                     = "ru-central1-a"
+subnet_id                = "<censored>"
+service_account_key_file = "<censored>"
+service_account_id       = "<censored>"
