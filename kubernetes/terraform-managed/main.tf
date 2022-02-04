@@ -37,6 +37,7 @@ resource "yandex_kubernetes_cluster" "reddit" {
   node_service_account_id = var.service_account_id
 
   release_channel         = var.kubernetes_release_channel
+  network_policy_provider = var.kubernetes_network_policy_provider
 }
 
 

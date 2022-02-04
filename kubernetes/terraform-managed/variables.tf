@@ -44,3 +44,7 @@ variable "kubernetes_release_channel" {
   description = "Kubernetes release channel"
   default     = "RAPID"
 }
+variable "kubernetes_network_policy_provider" {
+  description = "Kubernetes network policy provider"
+  default     = "CALICO"
+}
