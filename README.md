@@ -62,3 +62,10 @@ docker-compose изменен под кейс с множеством сетей
 Было сделано:
 Основное задание.
 Задание со *.
+
+## домашнее задание N20 (kubernetes-3)
+Было сделано:
+- Основное задание.
+- Исправления network policy для сервиса post: `kubernetes/reddit/mongo-network-policy.yml`
+- Задание со *: TLS-secret в виде манифеста: `kubernetes/reddit/ui-ingress-secret.yml`
+- pv/pvc для mongodb: `kubernetes/reddit/mongo-pv[c].yml`
