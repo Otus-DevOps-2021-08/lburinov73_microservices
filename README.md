@@ -69,3 +69,12 @@ docker-compose изменен под кейс с множеством сетей
 - Исправления network policy для сервиса post: `kubernetes/reddit/mongo-network-policy.yml`
 - Задание со *: TLS-secret в виде манифеста: `kubernetes/reddit/ui-ingress-secret.yml`
 - pv/pvc для mongodb: `kubernetes/reddit/mongo-pv[c].yml`
+
+## домашнее задание N21 (kubernetes-4)
+Было сделано:
+Основное задание:
+- установлены helm v2 и tiller;
+- созданы helm chart-ы для сервисов приложения;
+- написаны helper-функции для chart-ов;
+- установлен gitlab-omnibus;
+- созданы gitlab пайплайны

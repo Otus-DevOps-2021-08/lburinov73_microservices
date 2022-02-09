@@ -1,0 +1,15 @@
+dependencies:
+- name: ui
+  repository: file://../ui
+  version: 1.0.0
+- name: post
+  repository: file://../post
+  version: 1.0.0
+- name: comment
+  repository: file://../comment
+  version: 1.0.0
+- name: mongodb
+  repository: https://charts.helm.sh/stable
+  version: 7.2.10
+digest: sha256:44e7905728db482a0a1847750dbae9297e9d8e9836e705fc30ac0e2327a00115
+generated: "2022-02-08T11:14:08.77339028+04:00"
